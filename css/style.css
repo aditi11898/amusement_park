@@ -11,6 +11,24 @@
     position: relative;
   }
 
+  .about{
+    margin-top: 50px;
+  }
+  @keyframes example {
+    
+  }
+  .about_heading{
+    font-size:80px;
+    color:orange;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 10px 5px 10px grey;
+    transition: 0.3s linear;
+    /* transform: translateY(-10px); */
+  }
+  .navbar{
+    backdrop-filter: blur(100px);
+  }
   .navbar-nav a{
     color: white;
   }
