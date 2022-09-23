@@ -10,12 +10,19 @@
     background-size: cover;
     position: relative;
   }
+  .navbar{
+    backdrop-filter: blur(100px);
+  }
+  .navbar-nav a{
+    color: white;
+  }
+
+  .navbar-brand{
+    color:white;
+  }
 
   .about{
     margin-top: 50px;
-  }
-  @keyframes example {
-    
   }
   .about_heading{
     font-size:80px;
@@ -26,13 +33,10 @@
     transition: 0.3s linear;
     /* transform: translateY(-10px); */
   }
-  .navbar{
-    backdrop-filter: blur(100px);
-  }
-  .navbar-nav a{
-    color: white;
-  }
 
-  .navbar-brand{
-    color:white;
+  .about_content{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-image: url('/images/graph.png');
   }
