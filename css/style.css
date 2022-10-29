@@ -42,10 +42,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px ;
+    /* gap: 20px; */
   }
   .nav-branding{
     font-size: 2rem;
+  }
+  .nav-item a{
+    margin-top: 15px;
   }
   .nav-link{
     transition: 0.7s ease-in;
