@@ -268,7 +268,10 @@ header{
   .containers{
     height: 100vh;
     width:100%;
-    background-color: #FDBD01;
+    margin: 0px;
+    padding:0px;
+    /* position: relative; */
+    /* background-color: #FDBD01; */
     display: flex;
     border: none;
   }
