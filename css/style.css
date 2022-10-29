@@ -265,25 +265,26 @@ header{
   }
 
   /*Rides and Attraction page*/
-  .container{
+  .containers{
     height: 100vh;
     width:100%;
     margin: 0px;
     padding:0px;
     /* position: relative; */
-   background-color:#FFA500;;
-    position: relative;
+    /* background-color: #FDBD01; */
     display: flex;
+    border: none;
   }
   .Amusement_Park,.Water_Park{
     flex:50%;
     flex-direction: column;
     text-align: center;
     padding-top: 20px;
+    align-items: center;
+    justify-content: center;
   }
 
   .Amusement_Park{
-    /* background-color: red; */
     margin: 40px;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -292,7 +293,6 @@ header{
   }
 
   .Water_Park{
-    /* background-color: green; */
     margin: 40px;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
