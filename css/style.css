@@ -263,3 +263,39 @@ header{
       background-position-x: 1000px;
     }
   }
+
+  /*Rides and Attraction page*/
+  .container{
+    height: 100vh;
+    width:100%;
+    margin: 0px;
+    padding:0px;
+    /* position: relative; */
+    background-color: #FDBD01;
+    display: flex;
+  }
+  .Amusement_Park,.Water_Park{
+    flex:50%;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .Amusement_Park{
+    /* background-color: red; */
+    margin: 40px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+  }
+
+  .Water_Park{
+    /* background-color: green; */
+    margin: 40px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+  }
+
