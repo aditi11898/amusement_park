@@ -30,9 +30,9 @@ header{
   .navbar{
     min-height: 70px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    padding: 0 24px;
+    /* padding: 0 10px; */
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -42,7 +42,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px ;
+    gap: 10px ;
   }
   .nav-branding{
     font-size: 2rem;
@@ -90,13 +90,17 @@ header{
       text-align: center;
       transition: 0.3s linear;
     }
+
     .nav-item{
       margin: 16px 0;
     }
+
     .nav-menu.active{
       left: 0;
     }
+
   }
+
   hr{
     border-style: none;
     border-top-style: dotted;
