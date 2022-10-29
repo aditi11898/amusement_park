@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 *{
     margin: 0%;
     padding: 0%;
 } 
 header{
-    background-image: url("/images/header_img.jpg");
-    height:656px;
+    /* background-image: url("/images/header_img.jpg"); */
+    background-image: url("https://ak4.picdn.net/shutterstock/videos/5177654/thumb/1.jpg?ip=x480");
+    height:585px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,9 +14,17 @@ header{
   }
   header li{
     list-style: none;
+  
   }
   header a{
-    color: wheat;
+    color:black;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  header a:hover{
+    color: #fff;
     text-decoration: none;
   }
   .navbar{
@@ -23,6 +33,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
   }
   .nav-menu{
     display: flex;
@@ -76,17 +90,13 @@ header{
       text-align: center;
       transition: 0.3s linear;
     }
-
     .nav-item{
       margin: 16px 0;
     }
-
     .nav-menu.active{
       left: 0;
     }
-
   }
-
   hr{
     border-style: none;
     border-top-style: dotted;
@@ -123,6 +133,7 @@ header{
     padding: 10px;
     text-align: center;
     font-size: 20px;
+    font-weight: bold;
     /* margin-bottom: 100px; */
   }
 
