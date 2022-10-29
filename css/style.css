@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -132,7 +133,7 @@ header{
     /* color:orange; */
     color:black;
     font-weight: 100px;
-    font-family: 'Cookie', cursive;;
+    font-family: 'Cookie', cursive;
     text-align: center;
     text-shadow: 10px 5px 10px grey;
     transition: 0.3s linear;
@@ -271,7 +272,7 @@ header{
     margin: 0px;
     padding:0px;
     /* position: relative; */
-    /* background-color: #FDBD01; */
+    background-color:#DBE9FA;
     display: flex;
     border: none;
   }
@@ -284,12 +285,19 @@ header{
     justify-content: center;
   }
 
+  .Amusement_Park h1,.Water_Park h1{
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Cookie', cursive;
+  }
+
   .Amusement_Park{
     margin: 40px;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
+    position: relative;
   }
 
   .Water_Park{
@@ -298,5 +306,47 @@ header{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
+    position: relative;
   }
-
+  .card__inner {
+    background-color: orange;
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    position: absolute;
+    top: 0px;
+    text-align: justify;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    opacity: 0;
+    padding: 1.2rem 1.3rem 2rem 2rem;
+    transition: all 0.4s ease 0s;
+}
+.card__inner h2{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Cookie',cursive;
+  text-shadow: 2px 2px 2px white;
+}
+/* On hovering card opacity of
+    content must be 1*/
+.Amusement_Park:hover .card__inner {
+    opacity: 1;
+}
+.Water_Park:hover .card__inner {
+  opacity: 1;
+}
+.card__inner p {
+    overflow-y: scroll;
+    height: 87%;
+    padding-right: 1rem;
+    font-weight:40px;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+}
+/* .contents{
+  color: black;
+} */
