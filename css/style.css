@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -346,6 +347,47 @@ header{
     font-weight:40px;
     line-height: 2.5rem;
     margin-top: 1.5rem;
+}
+
+/*Tickets and prices page*/
+.price_containers{
+  height:200vh;
+  width:100%;
+  margin: 0px;
+  padding:0px;
+  /* position: relative; */
+  background-color:#FFCBA4;
+  border: none;
+}
+.price_containers h2{
+  font-family: 'Cookie',cursive;
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 30px;
+  text-shadow:2px 2px 2px white;
+}
+.criteria_prices{
+  border: 2px solid black;
+}
+.criteria{
+  font-family: 'Cormorant', serif;
+  padding-top:20px;
+  padding-left: 20px;
+}
+.prices{
+  font-family: 'Cormorant', serif;
+  padding-left: 20px;
+}
+.criteria_prices ul{
+  padding-left: 60px;
+}
+table{
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+th,td{
+  padding-right:  30px;
 }
 /* .contents{
   color: black;
