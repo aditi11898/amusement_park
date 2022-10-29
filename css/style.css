@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -46,7 +47,9 @@ header{
   }
   .nav-branding{
     font-size: 2rem;
+    transition: 0.7s ease-in;
   }
+
   .nav-item a{
     margin-top: 15px;
   }
@@ -117,7 +120,7 @@ header{
   .about{
     margin-top: 50px;
     background-image: url("https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/07/blobs.png?fit=1200%2C600&ssl=1&resize=350%2C200");
-    height:1000px;
+    height:1030px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,10 +128,11 @@ header{
     margin-bottom: 100px;
   }
   .about_heading{
-    font-size:80px;
+    font-size:100px;
     /* color:orange; */
     color:black;
     font-weight: 100px;
+    font-family: 'Cookie', cursive;;
     text-align: center;
     text-shadow: 10px 5px 10px grey;
     transition: 0.3s linear;
