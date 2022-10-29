@@ -271,7 +271,8 @@ header{
     margin: 0px;
     padding:0px;
     /* position: relative; */
-    background-color: #FDBD01;
+   background-color:#FFA500;;
+    position: relative;
     display: flex;
   }
   .Amusement_Park,.Water_Park{
