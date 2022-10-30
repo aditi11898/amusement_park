@@ -350,13 +350,14 @@ header{
 }
 
 /*Tickets and prices page*/
+
 .price_containers{
   height:200vh;
   width:100%;
   margin: 0px;
   padding:0px;
   /* position: relative; */
-  background-color:#FFCBA4;
+  background-color:#FFAE42;
   border: none;
 }
 .price_containers h2{
@@ -375,12 +376,12 @@ header{
   padding-top:20px;
   padding-left: 20px;
 }
+.criteria_prices ul{
+  padding-left: 60px;
+}
 .prices{
   font-family: 'Cormorant', serif;
   padding-left: 20px;
-}
-.criteria_prices ul{
-  padding-left: 60px;
 }
 table{
   margin-left: 40px;
@@ -388,6 +389,40 @@ table{
 }
 th,td{
   padding-right:  30px;
+}
+.card__inner1,.card__inner2,.card__inner3{
+    background-color:#3D3C3A;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    position: absolute;
+    text-align: justify;
+    bottom:0px;
+    left: 3px;
+    right: 3px;
+    z-index: 1;
+    opacity: 0;
+    padding: 1.2rem 1.3rem 2rem 2rem;
+    transition: all 0.4s ease 0s;
+}
+.card__inner1{
+  height:46.3vh;
+  top: 735px;
+}
+
+.card__inner2{
+  height:49.8vh;
+  top: 1157px;
+}
+.card__inner3{
+  height:49.8vh;
+  top: 1602px;
+}
+.card__inner1 img,.card__inner2 img , .card__inner3 img{
+  width:400px;
+  height:auto;  
+}
+.criteria_prices:hover .card__inner1,.criteria_prices:hover .card__inner2,.criteria_prices:hover .card__inner3 {
+  opacity: 1;
 }
 /* .contents{
   color: black;
