@@ -358,6 +358,41 @@ text-shadow: 2px 2px 2px white;
   backface-visibility: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+.flip-card:hover .flip-card-back ::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 100px black; 
+}
+ 
+.flip-card:hover .flip-card-back ::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+.flip-card .flip-card-back ::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background:orange;
+  border-radius: 5px;
+}
+
+/* Handle */
+.flip-card:hover .flip-card-back ::-webkit-scrollbar-thumb {
+  background:rgb(255, 238, 0);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background:rgb(241, 177, 56);
+} */
+
 /*Tickets and prices page*/
 
 .price_containers{
@@ -438,37 +473,3 @@ th,td{
 } */
 
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-.flip-card:hover .flip-card-back ::-webkit-scrollbar {
-  width: 10px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 100px black; 
-}
- 
-.flip-card:hover .flip-card-back ::-webkit-scrollbar-track {
-  box-shadow: none;
-}
-
-.flip-card .flip-card-back ::-webkit-scrollbar-track {
-  box-shadow: none;
-}
-
-::-webkit-scrollbar-thumb {
-  background:orange;
-  border-radius: 5px;
-}
-
-/* Handle */
-.flip-card:hover .flip-card-back ::-webkit-scrollbar-thumb {
-  background:rgb(255, 238, 0);
-  border-radius: 5px;
-}
-
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-  background:rgb(241, 177, 56);
-} */
