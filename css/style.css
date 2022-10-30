@@ -427,3 +427,57 @@ th,td{
 /* .contents{
   color: black;
 } */
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+.Amusement_Park:hover .card__inner ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.Water_Park:hover .card__inner ::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 100px black; 
+}
+ 
+.Amusement_Park:hover .card__inner ::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+.Amusement_Park .card__inner ::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+.Water_Park:hover .card__inner ::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+
+.Water_Park .card__inner ::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background:orange;
+  border-radius: 5px;
+}
+
+/* Handle */
+.Amusement_Park:hover .card__inner ::-webkit-scrollbar-thumb {
+  background:rgb(255, 238, 0);
+  border-radius: 5px;
+}
+
+.Water_Park:hover .card__inner ::-webkit-scrollbar-thumb {
+  background:rgb(255, 238, 0);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background:rgb(241, 177, 56);
+} */
