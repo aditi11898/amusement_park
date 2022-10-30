@@ -267,92 +267,95 @@ header{
   }
 
   /*Rides and Attraction page*/
-  .containers{
-    height: 100vh;
-    width:100%;
-    margin: 0px;
-    padding:0px;
-    /* position: relative; */
-    background-color:#DBE9FA;
-    display: flex;
-    border: none;
-  }
-  .Amusement_Park,.Water_Park{
-    flex:50%;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 20px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .Amusement_Park h1,.Water_Park h1{
-    font-weight: bold;
-    font-size: 60px;
-    font-family: 'Cookie', cursive;
-  }
-
-  .Amusement_Park{
-    margin: 40px;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    position: relative;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-
-  .Water_Park{
-    margin: 40px;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    position: relative;
-  }
-  .card__inner {
-    background-color: orange;
-    color: black;
-    font-family: 'Poiret One', cursive;
-    font-weight: bolder;
-    position: absolute;
-    top: 0px;
-    text-align: justify;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 1;
-    opacity: 0;
-    padding: 1.2rem 1.3rem 2rem 2rem;
-    transition: transform 0.6s;
-  transform-style: preserve-3d;
-    /* transition: all 0.4s ease 0s; */
+  
+.containers{
+  height: 100vh;
+  width:100%;
+  margin: 0px;
+  padding:0px;
+  /* position: relative; */
+  background-color:#DBE9FA;
+  display: flex;
+  border: none;
 }
-.card__inner h2{
+.containers .flip-card{
+  flex:50%;
+  flex-direction: column;
   text-align: center;
-  font-size: 60px;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.containers .flip-card .flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card h1{
   font-weight: bold;
-  font-family: 'Cookie',cursive;
-  text-shadow: 2px 2px 2px white;
+  font-size: 60px;
+  font-family: 'Cookie', cursive;
+}
+
+.flip-card{
+  margin: 40px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  position: relative;
+}
+.flip-card-back{
+  background-color: orange;
+  color: black;
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+  position: absolute;
+  top: 0px;
+  text-align: justify;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  opacity: 0;
+  padding: 1.2rem 1.3rem 2rem 2rem;
+  transition: transform 0.6s;
+transform-style: preserve-3d;
+  /* transition: all 0.4s ease 0s; */
+}
+.flip-card-back h2{
+text-align: center;
+font-size: 60px;
+font-weight: bold;
+font-family: 'Cookie',cursive;
+text-shadow: 2px 2px 2px white;
 }
 /* On hovering card opacity of
-    content must be 1*/
-.Amusement_Park:hover .card__inner {
-    opacity: 1;
-    transform: rotateY(180deg);
-}
-.Water_Park:hover .card__inner {
+  content must be 1*/
+.flip-card:hover .flip-card-back {
   opacity: 1;
+  transform: rotateY(180deg);
 }
-.card__inner p {
-    overflow-y: scroll;
-    height: 87%;
-    padding-right: 1rem;
-    font-weight:40px;
-    line-height: 2.5rem;
-    margin-top: 1.5rem;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-back p {
+  overflow-y: scroll;
+  height: 87%;
+  padding-right: 1rem;
+  font-weight:40px;
+  line-height: 2.5rem;
+  margin-top: 1.5rem;
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 /*Tickets and prices page*/
@@ -438,11 +441,7 @@ th,td{
 ::-webkit-scrollbar {
   width: 10px;
 }
-.Amusement_Park:hover .card__inner ::-webkit-scrollbar {
-  width: 10px;
-}
-
-.Water_Park:hover .card__inner ::-webkit-scrollbar {
+.flip-card:hover .flip-card-back ::-webkit-scrollbar {
   width: 10px;
 }
 /* Track */
@@ -450,20 +449,11 @@ th,td{
   box-shadow: inset 0 0 100px black; 
 }
  
-.Amusement_Park:hover .card__inner ::-webkit-scrollbar-track {
+.flip-card:hover .flip-card-back ::-webkit-scrollbar-track {
   box-shadow: none;
 }
 
-.Amusement_Park .card__inner ::-webkit-scrollbar-track {
-  box-shadow: none;
-}
-
-.Water_Park:hover .card__inner ::-webkit-scrollbar-track {
-  box-shadow: none;
-}
-
-
-.Water_Park .card__inner ::-webkit-scrollbar-track {
+.flip-card .flip-card-back ::-webkit-scrollbar-track {
   box-shadow: none;
 }
 
@@ -473,12 +463,7 @@ th,td{
 }
 
 /* Handle */
-.Amusement_Park:hover .card__inner ::-webkit-scrollbar-thumb {
-  background:rgb(255, 238, 0);
-  border-radius: 5px;
-}
-
-.Water_Park:hover .card__inner ::-webkit-scrollbar-thumb {
+.flip-card:hover .flip-card-back ::-webkit-scrollbar-thumb {
   background:rgb(255, 238, 0);
   border-radius: 5px;
 }
