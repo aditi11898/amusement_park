@@ -397,7 +397,9 @@ text-shadow: 2px 2px 2px white;
   margin: 0px;
   padding:0px;
   /* position: relative; */
-  background-color:#FFAE42;
+  background-image: url('https://garden.spoonflower.com/c/11514012/p/f/m/rbIsrrndFDYTqLMvuX6Q8mEiXZArYFPoWR_5mFhop77UEVwqqWNp/Medium%20Scale%20-%20Non-Directional%20-%20Plain%20Gingham%20-%20Dark%20Orange%20-%20Light%20Orange%20-%20White.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   border: none;
 }
 .price_containers h2{
@@ -468,4 +470,13 @@ th,td{
   color: black;
 } */
 
+/* 
+offers and details page  */
 
+#offer_heading{
+  color: orange;
+  font-size: 100px;
+  font-weight: bold;
+  font-family:'Cookie', cursive;
+  text-align: center;
+}
