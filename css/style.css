@@ -470,6 +470,7 @@ th,td{
   color: black;
 } */
 
+<<<<<<< Updated upstream
 /* 
 offers and details page  */
 
@@ -480,3 +481,12 @@ offers and details page  */
   font-family:'Cookie', cursive;
   text-align: center;
 }
+=======
+.modal{
+  width:500px;
+height: 720px;
+margin: 300px;
+  margin-left: 450px;
+
+}
+>>>>>>> Stashed changes
