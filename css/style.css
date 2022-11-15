@@ -471,6 +471,14 @@ th,td{
 } */
 /* 
 offers and details page  */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 100%;
+  margin: 10px;
+}
 
 #offer_heading{
   color: orange;
@@ -480,6 +488,68 @@ offers and details page  */
   text-align: center;
 }
 
+
+#title{
+  text-align:center;
+  font-size:100px;
+  font-family:'Cookie', cursive;
+
+}
+#description{
+text-align:center;
+font-size:25px;
+font-family:monospace;
+}
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    border:1px solid;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+.form-elements{
+margin-bottom: 25px;
+}
+
+.form-elements label{
+margin-bottom:5px;
+display:block;
+}
+.form-elements #name,#email,#number,#child,#adult,#seniorcitizen,textarea,select{
+border-radius:6px;
+padding: 10px;
+display: block;
+border:1px solid black;
+width:90%;
+box-shadow: 3px 3px 5px #C9C0BB;
+} 
+
+button{
+padding:10px;
+margin:0 auto;
+max-width:100%;
+display:block;
+border:1px solid black;
+width:100px;
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+}
+
+button a{
+text-decoration:none;
+color:black;
+font-size:12px;
+}
+
+button:hover{
+width:120px;
+height:50px;
+box-shadow:5px 5px 6px #C9C0BB;;
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+}
 .book_now{
   background-image: url('https://media.istockphoto.com/id/610160620/vector/abstract-vector-background-orange-and-yellow-mesh-gradient.jpg?s=170667a&w=0&k=20&c=ChuoxnUW5Kq22Iku5aVqK4XdGTBHzdedEqBtsl0bebo=');
   background-repeat: no-repeat;
