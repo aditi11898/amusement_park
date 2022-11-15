@@ -470,6 +470,7 @@ th,td{
   color: black;
 } */
 
+<<<<<<< Updated upstream
 /* 
 offers and details page  */
 
@@ -479,77 +480,6 @@ offers and details page  */
   font-weight: bold;
   font-family:'Cookie', cursive;
   text-align: center;
-}
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 100%;
-  margin: 10px;
-  padding: 10px;
-}
-/* book now */
-#title{
-  text-align:center;
-  font-size:100px;
-  font-family:'Cookie', cursive;
-
-}
-#description{
-text-align:center;
-font-size:25px;
-font-family:monospace;
-}
-form {
-    /* background-color:; */
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 30px 20px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-    border:1px solid;
-}
-.form-elements{
-margin-bottom: 25px;
-}
-
-.form-elements label{
-margin-bottom:5px;
-display:block;
-}
-.form-elements #name,#email,#number,#adult,#child,#seniorcitizen,#checkin-date,textarea,select{
-border-radius:6px;
-padding: 10px;
-display: block;
-border:1px solid black;
-width:90%;
-box-shadow: 3px 3px 5px #C9C0BB;
-} 
-
-button{
-padding:10px;
-margin:0 auto;
-max-width:100%;
-display:block;
-border:1px solid black;
-width:100px;
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-}
-
-button a{
-text-decoration:none;
-color:black;
-font-size:12px;
-}
-
-button:hover{
-width:120px;
-height:50px;
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
 }
 
 .book_now{
